@@ -67,6 +67,15 @@ input{
   animation: cake 3s infinite ease-in-out;
 }
 
+.logge{
+  background-image: url(./welcome.svg);
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

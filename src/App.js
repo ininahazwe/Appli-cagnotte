@@ -110,7 +110,9 @@ class App extends React.Component {
       if (this.state.step == 2) {
           blockStep2 = (
               <div>
-                  Félicitations, vous êtes loggé !<br />
+                  <div className="logge"></div>
+                  <br /><br />
+                  Félicitations, vous êtes loggé !<br /><br />
                   Veuillez sélectionner un montant ci-dessous pour la cagnotte de votre amie :
                   <br /><br />
                   <button onClick={this.handleGoToStep3} value={this.state.montant='2'}>2 euros</button>

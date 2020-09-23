@@ -32,7 +32,7 @@ class App extends React.Component {
           })
       } else {
           this.setState({
-              errorMessage: 'Votre identidiant est incorrect'
+              errorMessage: 'Votre identifiant est incorrect'
           })
       }
   }

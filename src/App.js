@@ -8,7 +8,7 @@ class App extends React.Component {
       username: '',
       password: '',
       errorMessage: '',
-      montant: '',
+      montant: 0,
       step: 0
   }
 
@@ -17,10 +17,28 @@ class App extends React.Component {
         step: 4
     })
   } 
-
-  handleGoToStep3 = () => {
+  handleGoToStep32 = () => {
     this.setState({
-        step: 3
+        step: 3,
+        montant: 2
+    })
+  } 
+  handleGoToStep35 = () => {
+    this.setState({
+        step: 3,
+        montant: 5
+    })
+  } 
+  handleGoToStep310 = () => {
+    this.setState({
+        step: 3,
+        montant: 10
+    })
+  } 
+  handleGoToStep320 = () => {
+    this.setState({
+        step: 3,
+        montant: 20
     })
   } 
 
@@ -32,7 +50,7 @@ class App extends React.Component {
           })
       } else {
           this.setState({
-              errorMessage: 'Votre identifiant est incorrect'
+              errorMessage: 'Votre identidiant est incorrect'
           })
       }
   }
@@ -115,10 +133,10 @@ class App extends React.Component {
                   Félicitations, vous êtes loggé !<br /><br />
                   Veuillez sélectionner un montant ci-dessous pour la cagnotte de votre amie :
                   <br /><br />
-                  <button onClick={this.handleGoToStep3} value={this.state.montant='2'}>2 euros</button>
-                  <button onClick={this.handleGoToStep3} value={this.state.montant='5'}>5 euros</button>
-                  <button onClick={this.handleGoToStep3} value={this.state.montant='10'}>10 euros</button>
-                  <button onClick={this.handleGoToStep3} value={this.state.montant='20'}>20 euros</button>
+                  <button onClick={this.handleGoToStep32}>2 euros</button>
+                  <button onClick={this.handleGoToStep35}>5 euros</button>
+                  <button onClick={this.handleGoToStep310}>10 euros</button>
+                  <button onClick={this.handleGoToStep320}>20 euros</button>
                   <button onClick={this.handleGoToStep4}>Autre ...</button>
               </div>
           );

@@ -17,6 +17,11 @@ class App extends React.Component {
         step: 4
     })
   } 
+  handleGoToStep3Custom = () => {
+    this.setState({
+        step: 3,
+    })
+  } 
   handleGoToStep32 = () => {
     this.setState({
         step: 3,
@@ -161,7 +166,7 @@ class App extends React.Component {
             <div>
                 Saisissez votre montant de participation<br/><br/>
                 <input type="text" value={this.state.montant} onChange={this.handleChangeMontant} /><br/>
-                <button onClick={this.handleGoToStep3}>Valider</button>
+                <button onClick={this.handleGoToStep3Custom}>Valider</button>
             </div>
         );
     } else {
